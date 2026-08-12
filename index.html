@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karan Panchal | Computer Engineering Student &amp; Developer</title>
+  <meta name="description" content="Karan Panchal — Computer Engineering student at Keystone School of Engineering, Pune. Building projects with Java, Python, JavaScript, Node.js, SQL and more." />
+  <meta name="keywords" content="Karan Panchal, Computer Engineering, Developer, Web Development, Java, Python, JavaScript, Node.js, SQL, Portfolio, Pune" />
+  <meta name="author" content="Karan Panchal" />
+  <meta property="og:title" content="Karan Panchal | Computer Engineering Student & Developer" />
+  <meta property="og:description" content="Building practical software projects while strengthening skills in programming, web development, databases and backend development." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Karan Panchal - Home">
+        <span class="logo-text">KP</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
+        <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-bg-quote" aria-hidden="true">BUILD. BREAK. LEARN. REPEAT.</div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-label reveal-up">HI, I'M</div>
+        <h1 class="hero-name reveal-up delay-1">Karan<br /><span class="name-accent">Panchal</span></h1>
+        <div class="hero-role reveal-up delay-2">
+          <span class="role-text">Computer Engineering Student &amp; Developer</span>
+        </div>
+        <p class="hero-desc reveal-up delay-3">
+          Building practical software projects while strengthening my skills in
+          programming, web development, databases and backend development.
+        </p>
+
+        <div class="hero-keywords reveal-up delay-4" aria-label="Areas of focus">
+          <span class="keyword-prefix">&gt;_</span>
+          <div class="keyword-rotator" id="keywordRotator" aria-live="polite">
+            <span class="keyword active">Web Development</span>
+            <span class="keyword">Programming</span>
+            <span class="keyword">Backend Development</span>
+            <span class="keyword">Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="hero-subline reveal-up delay-4">Turning ideas into working projects.</div>
+
+        <div class="hero-actions reveal-up delay-5">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="assets/resume/Karan_Panchal_Resume.pdf" download="Karan_Panchal_Resume.pdf" class="btn btn-secondary" aria-label="Download Karan Panchal Resume PDF">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+        <div class="hero-social reveal-up delay-6" aria-label="Social media links">
+          <a href="https://github.com/karanpanchal071-tech" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/karan-panchal-a934813aa/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/mainhoonkaran/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://x.com/mainhoonkaran" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter) profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.259 5.631L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap reveal-right">
+        <div class="hero-image-frame">
+          <div class="image-glow" aria-hidden="true"></div>
+          <div class="image-border" aria-hidden="true"></div>
+          <img src="assets/images/profile-1.jpg" alt="Karan Panchal — Computer Engineering Student" class="profile-img" loading="eager" />
+          <div class="hero-badge" aria-label="Developer">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Developer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about" id="about" aria-label="About section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <p class="section-subtitle">Who I am &amp; what I'm building</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm <strong>Karan Panchal</strong>, a B.Tech Computer Engineering student at
+            <strong>Keystone School of Engineering, Handewadi, Pune</strong>. I'm actively
+            building my foundation across programming, web development, backend, and database
+            technologies through hands-on projects.
+          </p>
+          <p>
+            My focus is on becoming a capable software developer by working with real
+            technologies and solving meaningful problems. I'm particularly interested in
+            backend development and building full-stack applications that work.
+          </p>
+          <p>
+            Every project I take on teaches me something new. I believe in writing clean code,
+            understanding fundamentals deeply, and continuously improving through practice.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Backend Development</span>
+            <span class="tag">Web Development</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">DSA</span>
+            <span class="tag">Open to Opportunities</span>
+          </div>
+        </div>
+
+        <div class="about-right reveal-right">
+          <div class="about-cards">
+            <div class="about-card reveal-up delay-1">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="about-card-label">1st Year</div>
+              <div class="about-card-value counter" data-target="8.85" data-decimals="2">0</div>
+              <div class="about-card-meta">CGPA</div>
+            </div>
+            <div class="about-card reveal-up delay-2">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="about-card-label">2nd Year</div>
+              <div class="about-card-value counter" data-target="8.25" data-decimals="2">0</div>
+              <div class="about-card-meta">CGPA</div>
+            </div>
+            <div class="about-card reveal-up delay-3">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="about-card-label">Degree</div>
+              <div class="about-card-value" style="font-size:1.1rem;line-height:1.2">B.Tech</div>
+              <div class="about-card-meta">Computer Engineering</div>
+            </div>
+            <div class="about-card about-card--wide reveal-up delay-4">
+              <div class="about-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div class="about-card-label">College</div>
+              <div class="about-card-value" style="font-size:0.95rem;line-height:1.3">Keystone School of Engineering</div>
+              <div class="about-card-meta">Handewadi, Pune</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENT BANNER ========== -->
+  <div class="achievement-banner reveal-up" aria-label="Achievement highlight">
+    <div class="container">
+      <div class="achievement-inner">
+        <div class="achievement-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        </div>
+        <div class="achievement-content">
+          <div class="achievement-label">Achievement</div>
+          <div class="achievement-title">3rd Runner-Up — EPD Project Competition</div>
+          <div class="achievement-meta">Anantrao Pawar College of Engineering &amp; Research · 17 April 2026</div>
+        </div>
+        <div class="achievement-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section skills" id="skills" aria-label="Skills section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">Technical <span class="accent">Arsenal</span></h2>
+        <p class="section-subtitle">Technologies I'm learning, building with, and improving every day.</p>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-bars reveal-left">
+          <h3 class="skills-group-title">Proficiency Overview</h3>
+          <p class="skills-disclaimer">Self-assessed working proficiency</p>
+
+          <div class="skill-bar-group">
+            <div class="skill-bar-item" data-percent="80">
+              <div class="skill-bar-header"><span class="skill-name">Java</span><span class="skill-percent">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="70">
+              <div class="skill-bar-header"><span class="skill-name">Python</span><span class="skill-percent">70%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:70%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="60">
+              <div class="skill-bar-header"><span class="skill-name">C</span><span class="skill-percent">60%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:60%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="90">
+              <div class="skill-bar-header"><span class="skill-name">HTML</span><span class="skill-percent">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:90%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="80">
+              <div class="skill-bar-header"><span class="skill-name">CSS</span><span class="skill-percent">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="75">
+              <div class="skill-bar-header"><span class="skill-name">JavaScript</span><span class="skill-percent">75%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:75%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="60">
+              <div class="skill-bar-header"><span class="skill-name">Node.js</span><span class="skill-percent">60%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:60%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="50">
+              <div class="skill-bar-header"><span class="skill-name">Java Backend</span><span class="skill-percent">50%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:50%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="80">
+              <div class="skill-bar-header"><span class="skill-name">SQL</span><span class="skill-percent">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-percent="80">
+              <div class="skill-bar-header"><span class="skill-name">DBMS</span><span class="skill-percent">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--pct:80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-categories reveal-right">
+          <div class="skill-category">
+            <h4 class="skill-cat-title">
+              <span class="cat-dot" aria-hidden="true"></span>Programming
+            </h4>
+            <div class="skill-tags"><span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">C</span></div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-cat-title">
+              <span class="cat-dot" aria-hidden="true"></span>Web
+            </h4>
+            <div class="skill-tags"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span></div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-cat-title">
+              <span class="cat-dot" aria-hidden="true"></span>Backend
+            </h4>
+            <div class="skill-tags"><span class="skill-tag">Node.js</span><span class="skill-tag">Java Backend</span></div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-cat-title">
+              <span class="cat-dot" aria-hidden="true"></span>Database
+            </h4>
+            <div class="skill-tags"><span class="skill-tag">SQL</span><span class="skill-tag">DBMS</span></div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-cat-title">
+              <span class="cat-dot" aria-hidden="true"></span>Tools
+            </h4>
+            <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">VS Code</span></div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-cat-title">
+              <span class="cat-dot" aria-hidden="true"></span>CS Fundamentals
+            </h4>
+            <div class="skill-tags"><span class="skill-tag">DSA</span><span class="skill-tag">DBMS</span><span class="skill-tag">Operating Systems</span></div>
+          </div>
+
+          <div class="skill-exploring">
+            <div class="exploring-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Currently Exploring
+            </div>
+            <div class="skill-tags"><span class="skill-tag skill-tag--explore">AI / ML</span><span class="skill-tag skill-tag--explore">Cloud Computing</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section projects" id="projects" aria-label="Projects section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">What I've <span class="accent">Built</span></h2>
+        <p class="section-subtitle">Real projects built to learn, practice, and demonstrate skills.</p>
+      </div>
+
+      <!-- Featured Project -->
+      <div class="featured-project reveal-up">
+        <div class="featured-label" aria-label="Featured project">⭐ Featured Project</div>
+        <div class="featured-inner">
+          <div class="featured-info">
+            <div class="featured-status"><span class="status-dot" aria-hidden="true"></span>Completed</div>
+            <h3 class="featured-title">SparkMind</h3>
+            <p class="featured-subtitle">AI Business Idea Generator</p>
+            <p class="featured-desc">
+              A web application that generates business ideas through an interactive user
+              experience. Built to explore JavaScript-driven interactions and dynamic
+              content generation in the browser.
+            </p>
+            <div class="featured-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="featured-actions">
+              <a href="https://github.com/karanpanchal071-tech/SparkMind-AI-Business-Idea-Generator" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="View SparkMind on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="featured-visual" aria-hidden="true">
+            <div class="featured-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-line mockup-line--title">SparkMind</div>
+                <div class="mockup-line mockup-line--sub">AI Business Idea Generator</div>
+                <div class="mockup-divider"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line mockup-line--short"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line mockup-line--shorter"></div>
+                <div class="mockup-btn-row"><div class="mockup-btn">Generate Idea</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects -->
+      <div class="other-projects reveal-up">
+        <h3 class="other-projects-title">More Projects</h3>
+        <div class="project-list">
+
+          <div class="project-item" tabindex="0" aria-label="NutriTrack project">
+            <div class="project-item-header">
+              <div class="project-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h4 class="project-item-name">NutriTrack</h4>
+              <div class="project-item-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+            </div>
+            <p class="project-item-desc">A nutrition tracking web application with an intuitive interface for monitoring daily dietary intake.</p>
+            <div class="project-item-tech">
+              <span class="tech-tag tech-tag--sm">HTML</span>
+              <span class="tech-tag tech-tag--sm">CSS</span>
+              <span class="tech-tag tech-tag--sm">JavaScript</span>
+              <span class="tech-tag tech-tag--sm">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="project-item" tabindex="0" aria-label="Autonomous Fire Extinguisher project">
+            <div class="project-item-header">
+              <div class="project-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 15.54a5 5 0 0 1 0-7.07"/></svg>
+              </div>
+              <h4 class="project-item-name">Autonomous Fire Extinguisher</h4>
+              <div class="project-item-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+            </div>
+            <p class="project-item-desc">An autonomous robot that detects and extinguishes fire using IR sensors, servo, water pump, and chassis motor, controlled by Arduino UNO.</p>
+            <div class="project-item-tech">
+              <span class="tech-tag tech-tag--sm">Arduino UNO</span>
+              <span class="tech-tag tech-tag--sm">C/C++</span>
+              <span class="tech-tag tech-tag--sm">IR Sensors</span>
+              <span class="tech-tag tech-tag--sm">Servo</span>
+              <span class="tech-tag tech-tag--sm">Water Pump</span>
+            </div>
+          </div>
+
+          <div class="project-item" tabindex="0" aria-label="Mini ATM project">
+            <div class="project-item-header">
+              <div class="project-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <h4 class="project-item-name">Mini ATM</h4>
+              <div class="project-item-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+            </div>
+            <p class="project-item-desc">A low-level ATM simulation implemented in 8086 Assembly, demonstrating deep understanding of computer architecture and memory management.</p>
+            <div class="project-item-tech">
+              <span class="tech-tag tech-tag--sm">8086 Assembly</span>
+              <span class="tech-tag tech-tag--sm">EMU8086</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATES SECTION ========== -->
+  <section class="section certificates" id="certificates" aria-label="Certificates section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">04 / Certificates</span>
+        <h2 class="section-title">Certificates &amp; <span class="accent">Recognition</span></h2>
+        <p class="section-subtitle">Courses completed, competitions entered, and skills validated.</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <div class="cert-card reveal-up delay-1">
+          <div class="cert-card-body">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4 class="cert-title">3rd Runner-Up — EPD Project Competition</h4>
+              <p class="cert-issuer">Anantrao Pawar College of Engineering &amp; Research</p>
+              <p class="cert-date">17 April 2026</p>
+            </div>
+          </div>
+          <button class="cert-view-btn" data-cert="assets/certificates/epd-achievement.jpg" aria-label="View EPD Achievement Certificate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+
+        <div class="cert-card reveal-up delay-2">
+          <div class="cert-card-body">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4 class="cert-title">EPD Project Competition — Participation</h4>
+              <p class="cert-issuer">Anantrao Pawar College of Engineering &amp; Research</p>
+              <p class="cert-date">Certificate of Participation</p>
+            </div>
+          </div>
+          <button class="cert-view-btn" data-cert="assets/certificates/epd-participation.jpg" aria-label="View EPD Participation Certificate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+
+        <div class="cert-card reveal-up delay-3">
+          <div class="cert-card-body">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4 class="cert-title">Alpha — DSA with Java</h4>
+              <p class="cert-issuer">Apna College</p>
+              <p class="cert-date">Certificate of Completion</p>
+            </div>
+          </div>
+          <button class="cert-view-btn" data-cert="assets/certificates/dsa-java.jpg" aria-label="View DSA with Java Certificate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+
+        <div class="cert-card reveal-up delay-4">
+          <div class="cert-card-body">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4 class="cert-title">RDBMS PostgreSQL Training</h4>
+              <p class="cert-issuer">Spoken Tutorial / EduPyramids / SINE, IIT Bombay</p>
+              <p class="cert-date">92.50% · 21 April 2026</p>
+            </div>
+          </div>
+          <button class="cert-view-btn" data-cert="assets/certificates/postgresql.jpg" aria-label="View PostgreSQL Certificate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+
+        <div class="cert-card reveal-up delay-1">
+          <div class="cert-card-body">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4 class="cert-title">Getting Started with Artificial Intelligence</h4>
+              <p class="cert-issuer">IBM SkillsBuild</p>
+              <p class="cert-date">Issued 16 July 2026</p>
+            </div>
+          </div>
+          <button class="cert-view-btn" data-cert="assets/certificates/ai.jpg" aria-label="View AI Certificate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+
+        <div class="cert-card reveal-up delay-2">
+          <div class="cert-card-body">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4 class="cert-title">Getting Started with Cybersecurity</h4>
+              <p class="cert-issuer">IBM SkillsBuild</p>
+              <p class="cert-date">Issued 17 July 2026</p>
+            </div>
+          </div>
+          <button class="cert-view-btn" data-cert="assets/certificates/cybersecurity.jpg" aria-label="View Cybersecurity Certificate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+
+        <div class="cert-card reveal-up delay-3">
+          <div class="cert-card-body">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4 class="cert-title">Adobe Commerce as a Cloud Service Foundations</h4>
+              <p class="cert-issuer">Adobe Digital Experience Certification Program</p>
+              <p class="cert-date">Completed 29 March 2026</p>
+            </div>
+          </div>
+          <button class="cert-view-btn" data-cert="assets/certificates/adobe-cloud.jpg" aria-label="View Adobe Cloud Certificate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATE MODAL ========== -->
+  <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate viewer" aria-hidden="true">
+    <div class="cert-modal-overlay" id="certModalOverlay"></div>
+    <div class="cert-modal-content">
+      <button class="cert-modal-close" id="certModalClose" aria-label="Close certificate viewer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img src="" alt="Certificate" id="certModalImg" class="cert-modal-img" />
+    </div>
+  </div>
+
+  <!-- ========== RESUME SECTION ========== -->
+  <section class="section resume-section" id="resume" aria-label="Resume section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">05 / Resume</span>
+        <h2 class="section-title">My <span class="accent">Resume</span></h2>
+        <p class="section-subtitle">A snapshot of my education, skills, and projects.</p>
+      </div>
+      <div class="resume-card reveal-up">
+        <div class="resume-card-inner">
+          <div class="resume-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="resume-text">
+            <h3>Karan Panchal</h3>
+            <p>Computer Engineering Student &amp; Developer</p>
+            <p class="resume-meta">B.Tech · Keystone School of Engineering, Pune</p>
+          </div>
+          <a href="assets/resume/Karan_Panchal_Resume.pdf" download="Karan_Panchal_Resume.pdf" class="btn btn-primary" aria-label="Download Karan Panchal Resume PDF">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+        <div class="resume-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact" id="contact" aria-label="Contact section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+        <p class="section-subtitle">Have an opportunity, idea, or project in mind?</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:panchal.karan26kp@gmail.com" class="contact-card reveal-up delay-1" aria-label="Send email to Karan Panchal">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">panchal.karan26kp@gmail.com</span>
+          </div>
+          <div class="contact-card-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="https://github.com/karanpanchal071-tech" target="_blank" rel="noopener noreferrer" class="contact-card reveal-up delay-2" aria-label="Visit GitHub profile">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">karanpanchal071-tech</span>
+          </div>
+          <div class="contact-card-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/karan-panchal-a934813aa/" target="_blank" rel="noopener noreferrer" class="contact-card reveal-up delay-3" aria-label="Visit LinkedIn profile">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">karan-panchal</span>
+          </div>
+          <div class="contact-card-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="https://www.instagram.com/mainhoonkaran/" target="_blank" rel="noopener noreferrer" class="contact-card reveal-up delay-4" aria-label="Visit Instagram profile">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">Instagram</span>
+            <span class="contact-card-value">@mainhoonkaran</span>
+          </div>
+          <div class="contact-card-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="https://x.com/mainhoonkaran" target="_blank" rel="noopener noreferrer" class="contact-card reveal-up delay-5" aria-label="Visit X (Twitter) profile">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.259 5.631L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">X (Twitter)</span>
+            <span class="contact-card-value">@mainhoonkaran</span>
+          </div>
+          <div class="contact-card-arrow" aria-hidden="true">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">KP</div>
+          <div class="footer-name">Karan Panchal</div>
+          <div class="footer-tagline">Computer Engineering Student &amp; Developer</div>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://github.com/karanpanchal071-tech" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/karan-panchal-a934813aa/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/mainhoonkaran/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://x.com/mainhoonkaran" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.259 5.631L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed &amp; Developed by Karan Panchal</p>
+        <p>© 2026 Karan Panchal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
